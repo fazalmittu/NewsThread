@@ -22,3 +22,6 @@ all_articles = newsapi.get_everything(q='iPhone',
 
 print(json.dumps(all_articles, indent=4))
 
+# need to store results in a database
+# need to take the url and then scrape the website
+
