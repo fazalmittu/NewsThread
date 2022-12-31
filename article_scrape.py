@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 import json
 from newsapi import NewsApiClient
+# from draft_thread import generate_thread
 
 load_dotenv()
 
@@ -22,6 +23,7 @@ all_articles = newsapi.get_everything(q='iPhone',
 
 print(json.dumps(all_articles, indent=4))
 
+# generate_thread(all_articles)
+
 # need to store results in a database
 # need to take the url and then scrape the website
-
